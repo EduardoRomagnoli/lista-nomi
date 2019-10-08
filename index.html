@@ -2,20 +2,37 @@
 	<head>
 		<title>Elenco nomi</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script type="text/javascript" src="js/javascript.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<center><h4 style="color:red"><b>Benvenuti :D</b></h4></center>
-		<table style="width:80%" border="1px" align="center">
-  		<tr>
-    		<th>Nome</th>
-    		<th>Cognome</th>
-    		<th>Data di nascita</th>
-  		</tr>
-				<td align="center"><input type="text" name="nome"></td>
-				<td align="center"><input type="text" name="cognome"></td>
-				<td align="center"><input type="text" name="data di nascita"></td>
-		</table>
 		<br>
-		<center><button type="button" class="btn btn-dark">Aggiungi linea</button></center>
+		<center><h4 style="font-family: 'Lobster', cursive;"><b>Elenco Nomi</b></h4></center>
+		<br><br>
+		<table style="width:80%" border="1px" align="center" id="tabella" class="table">
+			<thead class="thead-dark">
+  			<tr>
+    			<th style="text-align:center">Nome</th>
+    			<th style="text-align:center">Cognome</th>
+    			<th style="text-align:center">Data di nascita</th>
+  			</tr>
+			</thead>
+			<tr>
+				<td><input type="text" name="nome"/></td>
+				<td><input type="text" name="cognome"/></td>
+				<td><input type="text" name="data di nascita"/></td>
+			</tr>
+		</table>
+			<br>
+			<table style="width:35%" align="center">
+				<tr>
+					<td>
+						<center><button onclick="button()" class="btn btn-dark">Aggiungi linea</button></center>
+					</td>
+					<td>
+						<center><button onclick="button1()" class="btn btn-dark">Rimuovi linea</button></center>
+					</td>
+				</tr>
+			</table>
 	</body>
 </html>
